@@ -1,0 +1,121 @@
+#home {
+  margin-bottom: 6rem;
+  background: url(../../../assets/images/111.png) center center no-repeat;
+  background-size: cover;
+  height:650px;
+  @media (max-width:786px) {
+    margin-bottom: 0px !important;
+    background-size: contain !important;
+     background: url(../../../assets/images/22.jpg) center center no-repeat;
+     height: 324px !important;
+     background-color: transparent !important;
+    }
+}
+
+.typed-cursor {
+  font-size: 30px;
+  color: var(--dark);
+}
+
+.btn-play {
+  position: relative;
+  display: block;
+  box-sizing: content-box;
+  width: 16px;
+  height: 26px;
+  border-radius: 100%;
+  border: none;
+  outline: none !important;
+  padding: 18px 20px 20px 28px;
+  background: var(--primary);
+}
+
+.btn-play:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: var(--primary);
+  border-radius: 100%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+.btn-play:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  border-radius: 100%;
+  transition: all 200ms;
+}
+
+.btn-play span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  left: -1px;
+  border-left: 16px solid var(--primary);
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+    opacity: 0;
+  }
+}
+.px-8-0{
+  @media(max-width:786px) {
+    padding-left: 1rem !important;
+    padding-right: unset !important;
+
+  }
+}
+.add-size{
+  @media (max-width:786px) {
+      font-size: 1.3rem;
+    }
+}
+.py-6-1{
+    @media(max-width:786px) {
+  padding-top: 2rem !important;
+    }
+}
+.pt-5-1{
+  @media(max-width:786px) {
+  padding-top: 0.8rem !important;
+  }
+}
+.p-btn{
+  @media(max-width:786px) {
+  padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+}
+.my-6-3{
+  margin-top: 8rem;
+  @media(max-width:786px) {
+    margin-top: 3rem !important;
+  }
+}

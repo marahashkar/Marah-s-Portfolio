@@ -1,0 +1,46 @@
+[
+  {
+  "image": "assets/images/inas/inas.png",
+   "description": "studio website is built using html/scss,Angular15,bootstrap and many angular packages",
+   "link": "https://studiofront.incareg.com",
+   "framework": "angular"
+  },
+  {
+     "image": "assets/images/inas/lom.png",
+     "description": "lumiere website is built using html/scss,Angular14,bootstrap and many angular packages",
+     "link": "https://lumiereperfume.com",
+     "framework": "angular"
+  },
+  {
+     "image": "assets/images/inas/taxi.png",
+     "description": "dashboard for taxi application is built using html/scss,Angular14,angular material and many angular packages.",
+     "link": "https://dashborad.nbot.online/",
+     "framework": "angular",
+        "email": "admin@admin.com",
+        "password": "password"
+  },
+  {
+    "image": "assets/images/inas/hamad.png",
+    "description": "Hamad Auction website is built using html/scss,Angular14,bootstrap and many angular packages",
+    "link": "https://hamad-front.incareg.com/",
+    "framework": "angular"
+  },
+  {
+     "image": "assets/images/inas/power.png",
+     "description": "Power car website is built using html/css,bootstrap and jQuery.",
+     "link": "http://front.nbot.online",
+     "framework": ""
+  },
+  {
+    "image": "assets/images/inas/lara.png",
+    "description": "Lara website is built using html/css,bootstrap and jQuery.",
+    "link": "https://lara-cosmetic.com/",
+    "framework": ""
+  },
+  {
+    "image": "assets/images/inas/korean.png",
+    "description": "korean website is built using html/css,bootstrap and jQuery.",
+    "link": "https://incareg.com",
+    "framework": ""
+  }
+]

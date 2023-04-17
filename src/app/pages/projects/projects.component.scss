@@ -1,0 +1,60 @@
+/*** Project Portfolio ***/
+#portfolio-flters li {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--dark);
+  cursor: pointer;
+  transition: .5s;
+  border-bottom: 2px solid transparent;
+}
+
+#portfolio-flters li:hover,
+#portfolio-flters li.active {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.portfolio-img {
+  position: relative;
+  padding: 10px;
+  height: 240px;
+}
+
+.portfolio-btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(100%, 100%, 100%, 25%);
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  padding: 30px;
+  padding-bottom: 100px !important;
+  opacity: 0;
+  transition: .5s;
+  @media (max-width:786px) {
+    padding: 10px !important;
+
+  }
+}
+.portfolio-item:hover .portfolio-btn {
+  opacity: 1;
+  padding-bottom: 30px !important;
+}
+.addFlex{
+  display: flex;
+}
+.span{
+  font-style: italic;
+}
+.add-padding{
+  padding: 10px 20px !important;
+}
+// .add-image-height{
+//   height:180px  !important;
+// }

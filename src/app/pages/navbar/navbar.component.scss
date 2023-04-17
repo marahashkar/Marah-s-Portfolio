@@ -1,0 +1,32 @@
+/*** Navbar ***/
+.navbar.fixed-top {
+  display: none;
+  transition: .5s;
+}
+
+.navbar .navbar-nav .nav-link {
+  padding: 20px 15px;
+  color: var(--dark);
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+}
+.add-style{
+  background-image: url(../../../assets/images/m2.png);
+    height: 90px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}

@@ -1,0 +1,89 @@
+<div class="container-xxl py-6 pt-5" id="project">
+  <div class="container">
+    <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+      <div class="col-lg-4">
+        <h1 class="display-5 mb-0" style="font-weight: 400;">My Projects</h1>
+      </div>
+      <div class="col-lg-8 text-lg-end " id="nav-tab" role="tablist">
+        <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+          <li class="mx-3 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+            role="tab" aria-controls="nav-home" aria-selected="true">All Projects</li>
+          <li class="mx-3" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+            role="tab" aria-controls="nav-profile" aria-selected="false">Angular Projects</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab-content p-3 border bg-light" id="nav-tabContent">
+      <div class="tab-pane fade active show " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 portfolio-item second" *ngFor="let project of projectsList">
+              <div class="portfolio-img rounded overflow-hidden">
+                <img class="img-fluid add-image-height"  src="{{project.image}}" alt="">
+                <div class="portfolio-btn">
+                  <div>
+                    <p class="mb-1">{{project.description}}.</p>
+                        <span *ngIf="project.email" class="span">Email:{{project.email}}</span><br>
+                        <span *ngIf="project.password" class="span">Password:{{project.password}}</span>
+                  </div>
+                  <div class="addFlex">
+                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank"
+                      href="{{project.image}}"><i class="fa fa-eye"></i></a>
+                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank"
+                      href="{{project.link}}"><i class="fa fa-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!--
+
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="assets/images/inas/taxi.png" alt="">
+        <div class="portfolio-btn add-padding" >
+          <div >
+            <p style="margin-bottom:unset;">dashboard for taxi application is built using html/scss,Angular14,angular material and many angular packages.
+            </p>
+            <span class="span">email:admin@admin.com</span><br>
+            <span class="span">password:password</span>
+          </div>
+          <div class="addFlex">
+            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank"
+              href="assets/images/inas/taxi.png"><i class="fa fa-eye"></i></a>
+            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank"
+              href="https://dashborad.nbot.online/ "><i class="fa fa-link"></i></a>
+          </div>
+        </div>
+            </div>
+          </div>
+
+
+
+            </div> -->
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+      <div class="row">
+    <div class="col-lg-4 col-md-6 portfolio-item second" *ngFor="let project of angularProjectList">
+      <div class="portfolio-img rounded overflow-hidden">
+        <img class="img-fluid add-image-height" src="{{project.image}}" alt="">
+        <div class="portfolio-btn">
+          <div>
+            <p class="mb-4">{{project.description}}.</p>
+            <span *ngIf="project.email" class="span">Email:{{project.email}}</span><br>
+            <span *ngIf="project.password" class="span">Password:{{project.password}}</span>
+          </div>
+          <div class="addFlex">
+            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="{{project.image}}"><i
+                class="fa fa-eye"></i></a>
+            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" target="_blank" href="{{project.link}}"><i
+                class="fa fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</div>

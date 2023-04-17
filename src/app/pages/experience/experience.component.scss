@@ -1,0 +1,47 @@
+/*** Skills ***/
+#skill .progress {
+  height: 5px;
+  border-radius: 5px;
+}
+
+#skill .progress .progress-bar {
+
+  border-radius: 5px;
+  transition: 3s;
+  // animation: mymove 5s;
+}
+
+#skill .nav-pills .nav-link {
+  color: var(--dark);
+}
+
+#skill .nav-pills .nav-link.active {
+  color: #FFFFFF;
+}
+
+#skill .tab-content hr {
+  width: 30px;
+}
+.nav-pills .nav-link.active{
+  background-color: var(--primary);
+}
+@keyframes mymove {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+.fs-media{
+  @media (max-width:786px) {
+    font-size: 1rem !important;
+  }
+}
+.py-media{
+  @media (max-width:786px) {
+    padding-top: 0.5rem !important;
+      padding-bottom: 0.5rem !important
+  }
+}
